@@ -3,6 +3,7 @@ package com.kdxc.myrestful.service;
 import com.kdxc.myrestful.pojo.User;
 
 import java.util.List;
+import java.util.Map;
 
 public interface UserService {
 
@@ -11,4 +12,6 @@ public interface UserService {
     int insertUser(User user);
 
     void deleteUser(Integer uid);
+
+    Map<String, Object> queryUserByid(User user);
 }

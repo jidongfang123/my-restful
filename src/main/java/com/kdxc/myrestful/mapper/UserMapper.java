@@ -5,6 +5,8 @@ import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
+import java.util.Map;
+
 @Mapper
 public interface UserMapper {
 
@@ -15,4 +17,7 @@ public interface UserMapper {
 
     @Delete("delete from user where uid = #{uid}")
     void deleteUser(Integer uid);
+
+
+    Map<String, Object> queryUserByid(User user);
 }

@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class UserServiceImpl implements UserService{
@@ -26,5 +27,10 @@ public class UserServiceImpl implements UserService{
     @Override
     public void deleteUser(Integer uid) {
         userMapper.deleteUser(uid);
+    }
+
+    @Override
+    public Map<String, Object> queryUserByid(User user) {
+        return userMapper.queryUserByid(user);
     }
 }
