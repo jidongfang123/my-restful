@@ -37,6 +37,8 @@ public class UserController {
         rd.putVal("user",user);
      return rd;
     }
+	
+	//删除
     @ApiOperation(value = "删除用户",notes = "删除用户")
     @DeleteMapping(value = "deleteUser/{uid}")
     public ResponseData deleteUser(@PathVariable("uid") Integer uid){
