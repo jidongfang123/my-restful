@@ -7,6 +7,7 @@
         <result column="age" jdbcType="INTEGER" property="age"/>
         <result column="usex" jdbcType="INTEGER" property="usex"/>
         <result column="upwd" jdbcType="VARCHAR" property="upwd"/>
+        <result column="uphone" jdbcType="VARCHAR" property="uphone"/>
     </resultMap>
 
 
@@ -22,11 +23,11 @@
         </select>
 
         <insert id="insertUser"  useGeneratedKeys="true" keyProperty="uid" parameterType="com.kdxc.myrestful.pojo.User">
-            INSERT INTO user (uname,age,usex,upwd) VALUES (#{uname},#{age},#{usex},#{upwd})
+            INSERT INTO user (uname,age,usex,upwd,uphone) VALUES (#{uname},#{age},#{usex},#{upwd},#{uphone})
         </insert>
 
         <select id="queryUserByid" resultMap="LoginResultMap">
-            SELECT  uid,uname,upwd FROM user where uid = #{uid}
+            SELECT  uid,uname,upwd FROM user where uphone = #{uphone}
         </select>
 
 

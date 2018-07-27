@@ -12,6 +12,16 @@ public class User {
 
     private String upwd;
 
+    private String uphone;
+
+    public String getUphone() {
+        return uphone;
+    }
+
+    public void setUphone(String uphone) {
+        this.uphone = uphone;
+    }
+
     public Integer getUid() {
         return uid;
     }
@@ -52,6 +62,7 @@ public class User {
         this.upwd = upwd;
     }
 
+
     @Override
     public String toString() {
         return "User{" +
@@ -60,6 +71,7 @@ public class User {
                 ", age=" + age +
                 ", usex=" + usex +
                 ", upwd='" + upwd + '\'' +
+                ", uphone='" + uphone + '\'' +
                 '}';
     }
 }
