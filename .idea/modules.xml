@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/my-restfil.iml" filepath="$PROJECT_DIR$/my-restfil.iml" />
       <module fileurl="file://$PROJECT_DIR$/my-restfil.iml" filepath="$PROJECT_DIR$/my-restfil.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-restful.iml" filepath="$PROJECT_DIR$/my-restful.iml" />
     </modules>
   </component>
 </project>

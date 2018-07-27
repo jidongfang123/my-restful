@@ -52,7 +52,7 @@
                     success: function (msg) {
                         if (msg.returnCode == 0) {
                             layer.msg(msg.errorMsg + '！跳转页面请稍等!', function (){
-                                location.href = 'index.html';
+                                location.href = 'index';
                             });
                         }else{
                             layer.msg(msg.errorMsg, function (){
@@ -73,7 +73,7 @@
                     success: function (msg) {
                         if (msg.returnCode == 0) {
                             layer.msg(msg.errorMsg + '！跳转页面请稍等!', function (){
-                                location.href = 'index.html';
+                                location.href = 'index';
                             });
                         }else{
                             layer.msg(msg.errorMsg, function (){

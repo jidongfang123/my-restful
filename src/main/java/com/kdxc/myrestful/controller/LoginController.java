@@ -26,4 +26,18 @@ public class LoginController {
         session.invalidate();
         return "login";
     }
+
+    @ApiOperation(value = "跳转至首页",notes = "跳转至首页")
+    @GetMapping(value = "index")
+    public String toindex(Model model, HttpServletResponse response) {
+        model.addAttribute("name", "simonsfan");
+        return "index";
+    }
+
+    @ApiOperation(value = "跳转至首页",notes = "跳转至首页")
+    @GetMapping(value = "user_list")
+    public String user_list() {
+        return "user-list";
+    }
+
 }
