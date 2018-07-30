@@ -13,7 +13,7 @@ spring:
 
   datasource:
       name: boot
-      url: jdbc:mysql://140.143.209.73/boot?verifyServerCertificate=false&useSSL=false
+      url: jdbc:mysql://140.143.209.73/shrio?verifyServerCertificate=false&useSSL=false
       username: jidongfang
       password: root
       # 使用druid数据源

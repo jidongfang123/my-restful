@@ -1,26 +1,16 @@
 package com.kdxc.myrestful.pojo;
 
+import com.kdxc.myrestful.pojo.Role;
+
+import java.util.HashSet;
+import java.util.Set;
+
 public class User {
 
-    private Integer uid;
-
-    private String uname;
-
-    private int age;
-
-    private int usex;
-
-    private String upwd;
-
-    private String uphone;
-
-    public String getUphone() {
-        return uphone;
-    }
-
-    public void setUphone(String uphone) {
-        this.uphone = uphone;
-    }
+    private  Integer uid;
+    private  String username;
+    private  String password;
+    private  Set<Role> roles = new HashSet<>();
 
     public Integer getUid() {
         return uid;
@@ -30,48 +20,27 @@ public class User {
         this.uid = uid;
     }
 
-    public String getUname() {
-        return uname;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUname(String uname) {
-        this.uname = uname;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
-    public int getAge() {
-        return age;
+    public String getPassword() {
+        return password;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
-    public int getUsex() {
-        return usex;
+    public Set<Role> getRoles() {
+        return roles;
     }
 
-    public void setUsex(int usex) {
-        this.usex = usex;
-    }
-
-    public String getUpwd() {
-        return upwd;
-    }
-
-    public void setUpwd(String upwd) {
-        this.upwd = upwd;
-    }
-
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "uid=" + uid +
-                ", uname='" + uname + '\'' +
-                ", age=" + age +
-                ", usex=" + usex +
-                ", upwd='" + upwd + '\'' +
-                ", uphone='" + uphone + '\'' +
-                '}';
+    public void setRoles(Set<Role> roles) {
+        this.roles = roles;
     }
 }

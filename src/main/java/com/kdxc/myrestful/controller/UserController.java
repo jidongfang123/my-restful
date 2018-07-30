@@ -19,7 +19,7 @@ import java.util.Map;
 @RequestMapping("user")
 public class UserController {
 
-    @Autowired
+  /*  @Autowired
     private UserService userService;
 
     @ApiOperation(value = "登录",notes = "登录方法")
@@ -85,5 +85,5 @@ public class UserController {
             userService.deleteUser(uid);
             rd = new ResponseData(SystemConst.RESPONSE_SUCCESS);
         return  rd;
-    }
+    }*/
 }
