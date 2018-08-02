@@ -1,8 +1,6 @@
 package com.kdxc.myrestful.util;
 
 
-import com.kdxc.myrestful.pojo.User;
-
 public class MD5 {
 
     /**

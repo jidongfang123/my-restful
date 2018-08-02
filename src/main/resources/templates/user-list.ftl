@@ -66,7 +66,7 @@
         table.render({
             elem: '#demo'
             , height: 315
-            , url: '/user/queryUserList' //数据接口
+            , url: 'user/queryUserList' //数据接口
             , page: true //开启分页
             , curr: 1
             , limit: 3
@@ -78,11 +78,11 @@
             , cols: [[ //表头
                 {checkbox: true}
                 , {field: 'uid', title: 'ID', width: 80, sort: true}
-                , {field: 'uname', title: '用户名', width: 80}
+                , {field: 'name', title: '用户名', width: 80}
                 , {
-                    field: 'usex',
+                    field: 'sex',
 
-                    title: '操作',
+                    title: '性别',
                     width: 80,
                     align: 'center',
                     templet: function (d) {
@@ -96,8 +96,8 @@
                     }
                 }
                 , {field: 'age', title: '年龄', width: 80}
-                , {field: 'upwd', title: '密码', width: 80}
-                , {field: 'uphone', title: '手机号', width: 150}
+                , {field: 'pwd', title: '密码', width: 80}
+                , {field: 'phone', title: '手机号', width: 150}
                 , {
                     field: 'right',
                     title: '性别',
